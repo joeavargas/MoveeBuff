@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E34A1FD526A45555004C0372 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A1FD426A45555004C0372 /* Movie.swift */; };
+		E34A1FD826A6D238004C0372 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A1FD726A6D238004C0372 /* MovieService.swift */; };
 		E3C0EB6426A4048A00248382 /* MoveeBuffApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C0EB6326A4048A00248382 /* MoveeBuffApp.swift */; };
 		E3C0EB6626A4048A00248382 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C0EB6526A4048A00248382 /* ContentView.swift */; };
 		E3C0EB6826A4048B00248382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C0EB6726A4048B00248382 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		E34A1FD426A45555004C0372 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		E34A1FD726A6D238004C0372 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		E3C0EB6026A4048A00248382 /* MoveeBuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveeBuff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C0EB6326A4048A00248382 /* MoveeBuffApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveeBuffApp.swift; sourceTree = "<group>"; };
 		E3C0EB6526A4048A00248382 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E34A1FD626A6D224004C0372 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E34A1FD726A6D238004C0372 /* MovieService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E3C0EB5726A4048A00248382 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		E3C0EB6226A4048A00248382 /* MoveeBuff */ = {
 			isa = PBXGroup;
 			children = (
+				E34A1FD626A6D224004C0372 /* Services */,
 				E34A1FD326A45541004C0372 /* Model */,
 				E3C0EB6326A4048A00248382 /* MoveeBuffApp.swift */,
 				E3C0EB6526A4048A00248382 /* ContentView.swift */,
@@ -151,6 +162,7 @@
 			files = (
 				E3C0EB6626A4048A00248382 /* ContentView.swift in Sources */,
 				E3C0EB6426A4048A00248382 /* MoveeBuffApp.swift in Sources */,
+				E34A1FD826A6D238004C0372 /* MovieService.swift in Sources */,
 				E34A1FD526A45555004C0372 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
