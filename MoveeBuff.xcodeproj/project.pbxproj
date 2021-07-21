@@ -16,6 +16,7 @@
 		E3217F6526A88C9600988641 /* Movie+Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3217F6426A88C9600988641 /* Movie+Stubs.swift */; };
 		E3217F6826A891DA00988641 /* MovieBackdropCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3217F6726A891DA00988641 /* MovieBackdropCard.swift */; };
 		E3217F6B26A891F800988641 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3217F6A26A891F800988641 /* ImageLoader.swift */; };
+		E32BB99A26A8B090005A5293 /* MovieBackdropCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32BB99926A8B090005A5293 /* MovieBackdropCarouselView.swift */; };
 		E34A1FD526A45555004C0372 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A1FD426A45555004C0372 /* Movie.swift */; };
 		E34A1FD826A6D238004C0372 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A1FD726A6D238004C0372 /* MovieService.swift */; };
 		E3C0EB6426A4048A00248382 /* MoveeBuffApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C0EB6326A4048A00248382 /* MoveeBuffApp.swift */; };
@@ -34,6 +35,7 @@
 		E3217F6426A88C9600988641 /* Movie+Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Stubs.swift"; sourceTree = "<group>"; };
 		E3217F6726A891DA00988641 /* MovieBackdropCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCard.swift; sourceTree = "<group>"; };
 		E3217F6A26A891F800988641 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		E32BB99926A8B090005A5293 /* MovieBackdropCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCarouselView.swift; sourceTree = "<group>"; };
 		E34A1FD426A45555004C0372 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E34A1FD726A6D238004C0372 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		E3C0EB6026A4048A00248382 /* MoveeBuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveeBuff.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E3217F6726A891DA00988641 /* MovieBackdropCard.swift */,
+				E32BB99926A8B090005A5293 /* MovieBackdropCarouselView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32BB99A26A8B090005A5293 /* MovieBackdropCarouselView.swift in Sources */,
 				E3217F6526A88C9600988641 /* Movie+Stubs.swift in Sources */,
 				E3217F5C26A844DB00988641 /* JsonDecoder.swift in Sources */,
 				E3217F6B26A891F800988641 /* ImageLoader.swift in Sources */,
