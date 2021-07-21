@@ -5,7 +5,7 @@
 //  Created by Joe Vargas on 7/21/21.
 //
 
-import Foundation
+import SwiftUI
 import UIKit
 
 private let _imageCache = NSCache<AnyObject, AnyObject>()

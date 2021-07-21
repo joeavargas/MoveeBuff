@@ -65,7 +65,7 @@ struct MovieListView: View {
                 }
                 .listRowInsets(EdgeInsets(top: 16, leading: 0, bottom: 8, trailing: 0))
             }
-            .navigationTitle("The MovieDB")
+            .navigationTitle("MoveeBuff")
         }
         .onAppear{
             self.nowPlayingState.loadMovies(with: .nowPlaying)
