@@ -10,6 +10,10 @@
 		E3217F5826A8432400988641 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3217F5726A8432400988641 /* Constants.swift */; };
 		E3217F5A26A8445400988641 /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3217F5926A8445400988641 /* MovieStore.swift */; };
 		E3217F5C26A844DB00988641 /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3217F5B26A844DB00988641 /* JsonDecoder.swift */; };
+		E3217F6126A88C6C00988641 /* search_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = E3217F5E26A88C6C00988641 /* search_movie.json */; };
+		E3217F6226A88C6C00988641 /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = E3217F5F26A88C6C00988641 /* movie_list.json */; };
+		E3217F6326A88C6C00988641 /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = E3217F6026A88C6C00988641 /* movie_info.json */; };
+		E3217F6526A88C9600988641 /* Movie+Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3217F6426A88C9600988641 /* Movie+Stubs.swift */; };
 		E34A1FD526A45555004C0372 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A1FD426A45555004C0372 /* Movie.swift */; };
 		E34A1FD826A6D238004C0372 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A1FD726A6D238004C0372 /* MovieService.swift */; };
 		E3C0EB6426A4048A00248382 /* MoveeBuffApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C0EB6326A4048A00248382 /* MoveeBuffApp.swift */; };
@@ -22,6 +26,10 @@
 		E3217F5726A8432400988641 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E3217F5926A8445400988641 /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
 		E3217F5B26A844DB00988641 /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
+		E3217F5E26A88C6C00988641 /* search_movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_movie.json; sourceTree = "<group>"; };
+		E3217F5F26A88C6C00988641 /* movie_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_list.json; sourceTree = "<group>"; };
+		E3217F6026A88C6C00988641 /* movie_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_info.json; sourceTree = "<group>"; };
+		E3217F6426A88C9600988641 /* Movie+Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Stubs.swift"; sourceTree = "<group>"; };
 		E34A1FD426A45555004C0372 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E34A1FD726A6D238004C0372 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		E3C0EB6026A4048A00248382 /* MoveeBuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveeBuff.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,10 +60,21 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		E3217F5D26A88C5600988641 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3217F6026A88C6C00988641 /* movie_info.json */,
+				E3217F5F26A88C6C00988641 /* movie_list.json */,
+				E3217F5E26A88C6C00988641 /* search_movie.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E34A1FD326A45541004C0372 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				E34A1FD426A45555004C0372 /* Movie.swift */,
+				E3217F6426A88C9600988641 /* Movie+Stubs.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				E34A1FD326A45541004C0372 /* Model */,
+				E3217F5D26A88C5600988641 /* Resources */,
 				E34A1FD626A6D224004C0372 /* Services */,
 				E3217F5626A8430A00988641 /* Utils */,
 				E3C0EB6326A4048A00248382 /* MoveeBuffApp.swift */,
@@ -165,7 +185,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3217F6126A88C6C00988641 /* search_movie.json in Resources */,
+				E3217F6326A88C6C00988641 /* movie_info.json in Resources */,
 				E3C0EB6B26A4048B00248382 /* Preview Assets.xcassets in Resources */,
+				E3217F6226A88C6C00988641 /* movie_list.json in Resources */,
 				E3C0EB6826A4048B00248382 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3217F6526A88C9600988641 /* Movie+Stubs.swift in Sources */,
 				E3217F5C26A844DB00988641 /* JsonDecoder.swift in Sources */,
 				E3217F5826A8432400988641 /* Constants.swift in Sources */,
 				E3C0EB6626A4048A00248382 /* ContentView.swift in Sources */,
