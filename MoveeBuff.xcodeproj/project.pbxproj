@@ -30,6 +30,9 @@
 		E3BB11B126A9339B009CCA80 /* MovieDetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BB11B026A9339B009CCA80 /* MovieDetailListViewModel.swift */; };
 		E3BB11B326A933E5009CCA80 /* MovieDetailImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BB11B226A933E5009CCA80 /* MovieDetailImageViewModel.swift */; };
 		E3BB11B526A9741B009CCA80 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BB11B426A9741B009CCA80 /* SafariView.swift */; };
+		E3BB11B726A97C24009CCA80 /* MovieSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BB11B626A97C24009CCA80 /* MovieSearchView.swift */; };
+		E3BB11B926A97C75009CCA80 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BB11B826A97C75009CCA80 /* SearchBarView.swift */; };
+		E3BB11BB26A97E19009CCA80 /* MovieSearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BB11BA26A97E19009CCA80 /* MovieSearchState.swift */; };
 		E3C0EB6426A4048A00248382 /* MoveeBuffApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C0EB6326A4048A00248382 /* MoveeBuffApp.swift */; };
 		E3C0EB6626A4048A00248382 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C0EB6526A4048A00248382 /* ContentView.swift */; };
 		E3C0EB6826A4048B00248382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C0EB6726A4048B00248382 /* Assets.xcassets */; };
@@ -60,6 +63,9 @@
 		E3BB11B026A9339B009CCA80 /* MovieDetailListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailListViewModel.swift; sourceTree = "<group>"; };
 		E3BB11B226A933E5009CCA80 /* MovieDetailImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailImageViewModel.swift; sourceTree = "<group>"; };
 		E3BB11B426A9741B009CCA80 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		E3BB11B626A97C24009CCA80 /* MovieSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchView.swift; sourceTree = "<group>"; };
+		E3BB11B826A97C75009CCA80 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		E3BB11BA26A97E19009CCA80 /* MovieSearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchState.swift; sourceTree = "<group>"; };
 		E3C0EB6026A4048A00248382 /* MoveeBuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveeBuff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C0EB6326A4048A00248382 /* MoveeBuffApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveeBuffApp.swift; sourceTree = "<group>"; };
 		E3C0EB6526A4048A00248382 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 				E3BB11AC26A92DBD009CCA80 /* MovieDetailView.swift */,
 				E3BB11B026A9339B009CCA80 /* MovieDetailListViewModel.swift */,
 				E3BB11B226A933E5009CCA80 /* MovieDetailImageViewModel.swift */,
+				E3BB11B626A97C24009CCA80 /* MovieSearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 				E3217F6A26A891F800988641 /* ImageLoader.swift */,
 				E32BB9A126A8B9CA005A5293 /* MovieListState.swift */,
 				E3BB11AE26A92E26009CCA80 /* MovieDetailState.swift */,
+				E3BB11BA26A97E19009CCA80 /* MovieSearchState.swift */,
 			);
 			path = Bindings;
 			sourceTree = "<group>";
@@ -130,6 +138,7 @@
 			children = (
 				E32BB9A426A8BC5C005A5293 /* ActivityIndicatorView.swift */,
 				E3BB11B426A9741B009CCA80 /* SafariView.swift */,
+				E3BB11B826A97C75009CCA80 /* SearchBarView.swift */,
 			);
 			path = UIKitView;
 			sourceTree = "<group>";
@@ -270,6 +279,7 @@
 				E32BB99A26A8B090005A5293 /* MovieBackdropCarouselView.swift in Sources */,
 				E3BB11AF26A92E26009CCA80 /* MovieDetailState.swift in Sources */,
 				E32BB9A026A8B9AD005A5293 /* MovieListView.swift in Sources */,
+				E3BB11B926A97C75009CCA80 /* SearchBarView.swift in Sources */,
 				E32BB9A226A8B9CA005A5293 /* MovieListState.swift in Sources */,
 				E3217F6526A88C9600988641 /* Movie+Stubs.swift in Sources */,
 				E32BB9A726A8BDBF005A5293 /* LoadingView.swift in Sources */,
@@ -279,8 +289,10 @@
 				E3C0EB6626A4048A00248382 /* ContentView.swift in Sources */,
 				E32BB99C26A8B3BB005A5293 /* MoviePosterCardView.swift in Sources */,
 				E3BB11B526A9741B009CCA80 /* SafariView.swift in Sources */,
+				E3BB11B726A97C24009CCA80 /* MovieSearchView.swift in Sources */,
 				E3217F6826A891DA00988641 /* MovieBackdropCard.swift in Sources */,
 				E3C0EB6426A4048A00248382 /* MoveeBuffApp.swift in Sources */,
+				E3BB11BB26A97E19009CCA80 /* MovieSearchState.swift in Sources */,
 				E3BB11AD26A92DBD009CCA80 /* MovieDetailView.swift in Sources */,
 				E34A1FD826A6D238004C0372 /* MovieService.swift in Sources */,
 				E32BB9A526A8BC5C005A5293 /* ActivityIndicatorView.swift in Sources */,
