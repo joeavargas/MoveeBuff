@@ -13,6 +13,25 @@ struct MovieDetailListViewModel: View {
     var body: some View {
         List {
             MovieDetailImageViewModel(imageURL: self.movie.backdropURL)
+            
+            HStack {
+                Text(movie.genreText)
+                Text("·")
+                Text(movie.yearText)
+                Text(movie.durationText)
+            }
+            
+            Text(movie.overview)
+            
+            HStack {
+                if !movie.ratingText.isEmpty {
+                    Text(movie.ratingText).foregroundColor(.yellow)
+                }
+                Text(movie.scoreText)
+            }
+            
+            Divider()
+                .padding(.horizontal)
         }
     }
 }
