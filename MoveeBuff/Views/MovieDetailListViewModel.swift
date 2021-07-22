@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MovieDetailListViewModel: View {
     let movie: Movie
+    @State private var selectedTrailer: MovieVideo?
     
     var body: some View {
         List {
@@ -84,13 +85,36 @@ struct MovieDetailListViewModel: View {
                 }
             }
             Divider()
+            
+            // Trailers section
+            if movie.youtubeTrailers != nil && movie.youtubeTrailers!.count > 0 {
+                Text("Trailers")
+                    .font(.headline)
+                
+                ForEach(movie.youtubeTrailers!){ trailer in
+                    Button(action: {
+                        self.selectedTrailer = trailer
+                    }){
+                        HStack {
+                            Text(trailer.name)
+                            Spacer()
+                            Image(systemName: "play.circle.fill")
+                                .foregroundColor(Color(UIColor.systemBlue))
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .sheet(item: self.$selectedTrailer) { trailer in
+            SafariView(url: trailer.youtubeURL!)
         }
     }
 }
 
-//struct MovieDetailListViewModel_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MovieDetailListViewModel(movie: Movie.stubbedMovie)
-//            .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-//    }
-//}
+struct MovieDetailListViewModel_Previews: PreviewProvider {
+    static var previews: some View {
+        MovieDetailListViewModel(movie: Movie.stubbedMovie)
+            .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+    }
+}
