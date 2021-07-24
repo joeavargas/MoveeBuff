@@ -6,6 +6,6 @@
 //
 
 struct K {
-    static var apiKey = "05560c15629d2c53544abdaf1513f4c8"
+    static var apiKey = "REPLACE WITH API KEY"
     static var baseApiUrl = "https://api.themoviedb.org/3"
 }
