@@ -1,3 +1,4 @@
+![](https://github.com/joeavargas/MoveeBuff/blob/main/MoveeBuff/app_icon.png)
 # MoveeBuff 🎬
 App querying TMDB's REST API endpoint
 
